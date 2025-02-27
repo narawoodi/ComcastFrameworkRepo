@@ -17,6 +17,9 @@ public class HomePage {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
+	
+	@FindBy(linkText = "Products")
+	private WebElement productLink;
 
 	@FindBy(linkText = "Organizations")
 	private WebElement orgLink;
@@ -67,6 +70,10 @@ public class HomePage {
 		return vendorLink;
 	}
 	
+	public WebElement getProductLink() {
+		return productLink;
+	}
+
 	public void navigateToMoreDropdown() {
 		Actions act = new Actions(driver);
 		act.moveToElement(moreLink).perform();
