@@ -10,6 +10,9 @@ public class Products {
 	@FindBy(name = "submit")
 	private WebElement search2;
 	
+	@FindBy(name = "submit")
+	private WebElement search3;
+	
 	
 	
 	
