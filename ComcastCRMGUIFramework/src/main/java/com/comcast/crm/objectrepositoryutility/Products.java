@@ -8,7 +8,9 @@ public class Products {
 	private WebElement createProductImgBtn;
 
 	@FindBy(name = "submit")
-	private WebElement search1;
+	private WebElement search2;
+	
+	
 	
 	
 
