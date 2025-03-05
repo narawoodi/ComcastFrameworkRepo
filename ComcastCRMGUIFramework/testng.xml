@@ -10,7 +10,7 @@
       <methods>
       	<include name="createOrganizationTest"/>
       </methods>
-      </class>
+     </class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

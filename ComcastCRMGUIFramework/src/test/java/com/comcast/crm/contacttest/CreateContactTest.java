@@ -42,7 +42,7 @@ import com.comcast.crm.objectrepositoryutility.OrganizationsPage;
  */
 
 public class CreateContactTest extends BaseClass {
-	@Test(groups = {"smokeTest","regressionTest"})
+	@Test(groups = {"smokeTest"})
 	public void createContactTest() throws Throwable {
 		/* Create Object */
 //		FileUtility fLib = new FileUtility();
@@ -162,7 +162,7 @@ public class CreateContactTest extends BaseClass {
 		soft.assertAll();
 	}
 
-	@Test(groups = {"smokeTest","regressionTest"})
+	@Test(groups = {"regressionTest"})
 	public void createContactWithOrganizationTest() throws Throwable {
 		/* Read test script data from ExcelUtility and add random utility*/
 		String orgName = eLib.getDataFromExcel("contact", 7, 2) + jLib.getRandomNumber();
@@ -215,7 +215,7 @@ public class CreateContactTest extends BaseClass {
 		
 	}
 
-	@Test(groups = {"smokeTest","regressionTest"})
+	@Test(groups = {"regressionTest"})
 	public void createContactWithSupportDateTest() throws Throwable {
 		/* Read test script data from ExcelUtility and add random utility*/
 		String lastName = eLib.getDataFromExcel("contact", 4, 2) + jLib.getRandomNumber();

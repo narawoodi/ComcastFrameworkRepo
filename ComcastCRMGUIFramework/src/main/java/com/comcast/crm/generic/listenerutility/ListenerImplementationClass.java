@@ -54,13 +54,13 @@ public class ListenerImplementationClass implements ITestListener, ISuiteListene
 		System.out.println("----->"+result.getMethod().getMethodName()+"<--START--");
 		test = report.createTest(result.getMethod().getMethodName());
 		UtilityClassObject.setTest(test);
-		test.log(Status.INFO, result.getMethod().getMethodName()+"--> STARTED <--");
+		test.log(Status.INFO, result.getMethod().getMethodName()+"");
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		System.out.println("----->"+result.getMethod().getMethodName()+"<--END--");
-		test.log(Status.INFO, result.getMethod().getMethodName()+"--> COMPLETED <--");
+		test.log(Status.PASS, result.getMethod().getMethodName()+"--> COMPLETED <--");
 	}
 
 	@Override

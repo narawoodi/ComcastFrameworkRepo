@@ -15,9 +15,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.comcast.crm.generic.databaseutility.DatabaseUtility;
 import com.comcast.crm.generic.fileutility.ExcelUtility;
 import com.comcast.crm.generic.fileutility.FileUtility;
@@ -41,8 +38,6 @@ public class BaseClass {
 	public void configBS() throws SQLException {
 		System.out.println("-----Connect to DB, Report Config-----");
 		dbLib.getDbconnection();
-		
-
 	}
 	
 	//@Parameters("BROWSER")

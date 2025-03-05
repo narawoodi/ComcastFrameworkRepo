@@ -160,8 +160,8 @@ public class CreateOrganizationTest extends BaseClass {
 		hp.getOrgLink().click();
 
 		/*Step 3: Click on "Create Organization" Button*/
-		/*ListenerImplementationClass.test.log(Status.INFO, "Navigate to Create Organization Page");*/
-		UtilityClassObject.getTest().log(Status.INFO, "Navigate to Create Organization Page");
+		/*ListenerImplementationClass.test.log(Status.INFO, "Click on Create Organization Page");*/
+		UtilityClassObject.getTest().log(Status.INFO, "Click on Create Organization Page");
 		OrganizationsPage cnp = new OrganizationsPage(driver);
 		cnp.getCreateNewOrgBtn().click();
 		
@@ -170,11 +170,11 @@ public class CreateOrganizationTest extends BaseClass {
 		UtilityClassObject.getTest().log(Status.INFO, "Create a new Organization");
 		CreatingNewOrganizationPage cnop = new CreatingNewOrganizationPage(driver);
 		cnop.createOrg(orgName);
-		ListenerImplementationClass.test.log(Status.INFO, orgName+"---->Create a new Organization"); //Display the organization name which is getiing created during the run-time
+		/*ListenerImplementationClass.test.log(Status.INFO, orgName+"---->Create a new Organization"); //Display the organization name which is getiing created during the run-time*/
 		
 		/*Step 5: Verify Header Message Expected Result*/
-		/*ListenerImplementationClass.test.log(Status.INFO, "Read data from Excel");*/
-		UtilityClassObject.getTest().log(Status.INFO, "Verify Header Message Expected Result");
+		/*ListenerImplementationClass.test.log(Status.INFO, "Verify Header Message Expected Result");*/
+		UtilityClassObject.getTest().log(Status.INFO, orgName+" Header Message Expected is PASS");
 		OrganizationInfoPage oip = new OrganizationInfoPage(driver);
 		String actOrgName = oip.getHeaderMsg().getText();
 		Assert.assertEquals(true, actOrgName.contains(orgName));
@@ -189,24 +189,23 @@ public class CreateOrganizationTest extends BaseClass {
 		String type=eLib.getDataFromExcel("org", 4, 4);
 		
 		/*Step 2: Navigate to Organizations Module*/
-		ListenerImplementationClass.test.log(Status.INFO, "Read data from Excel");
+		ListenerImplementationClass.test.log(Status.INFO, "Navigate to Organizations Module");
 		HomePage hp = new HomePage(driver);
 		hp.getOrgLink().click();
 
 		 
 		/*Step 3: Click on "Create Organization" Button*/
-		ListenerImplementationClass.test.log(Status.INFO, "Read data from Excel");
+		ListenerImplementationClass.test.log(Status.INFO, "Click on Create Organization Button");
 		OrganizationsPage cnp = new OrganizationsPage(driver);
 		cnp.getCreateNewOrgBtn().click();
-
-		 
+ 
 		/*Step 4: Enter all the details and create new Organization*/
-		ListenerImplementationClass.test.log(Status.INFO, "Read data from Excel");
+		ListenerImplementationClass.test.log(Status.INFO, "Enter all the details and create new Organization");
 		CreatingNewOrganizationPage cnop = new CreatingNewOrganizationPage(driver);
 		cnop.createOrgWithIndustryAndType(orgName, industry, type);
 			
 		/*Step 5: Verify the Organization Name, industries and type info*/
-		ListenerImplementationClass.test.log(Status.INFO, "Read data from Excel");
+		ListenerImplementationClass.test.log(Status.INFO, "Verify the Organization Name, industries and type info");
 		OrganizationInfoPage oip = new OrganizationInfoPage(driver);
 		String actOrgName = oip.getHeaderMsg().getText();
 		Assert.assertEquals(true, actOrgName.contains(orgName));
@@ -224,23 +223,23 @@ public class CreateOrganizationTest extends BaseClass {
 		String phoneNumber = eLib.getDataFromExcel("org", 7, 3);
 		
 		/*Step 2: Navigate to Organizations Module*/
-		ListenerImplementationClass.test.log(Status.INFO, "Read data from Excel");
+		ListenerImplementationClass.test.log(Status.INFO, "Navigate to Organizations Module");
 		HomePage hp = new HomePage(driver);
 		hp.getOrgLink().click();
 
 		 
 		/*Step 3: Click on "Create Organization" Button*/
-		ListenerImplementationClass.test.log(Status.INFO, "Read data from Excel");
+		ListenerImplementationClass.test.log(Status.INFO, "Click on Create Organization Button");
 		OrganizationsPage cnp = new OrganizationsPage(driver);
 		cnp.getCreateNewOrgBtn().click();
 
 		/*Step 4: Enter all the details and create new Organization with Phone Number*/
-		ListenerImplementationClass.test.log(Status.INFO, "Read data from Excel");
+		ListenerImplementationClass.test.log(Status.INFO, "Enter all the details and create new Organization with Phone Number");
 		CreatingNewOrganizationPage corgp = new CreatingNewOrganizationPage(driver);
 		corgp.createOrgWithPhoneNumber(orgName, phoneNumber);
 		
 		/*Step 5: Verify whether the entered Organization and phone number details are valid or not*/
-		ListenerImplementationClass.test.log(Status.INFO, "Read data from Excel");
+		ListenerImplementationClass.test.log(Status.INFO, "Verify whether the entered Organization and phone number details are valid or not");
 		OrganizationInfoPage oip = new OrganizationInfoPage(driver);
 		String actOrgName = oip.getHeaderMsg().getText();
 		Assert.assertEquals(true, actOrgName.contains(orgName));
