@@ -1,47 +1,413 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="4" total="16" passed="6" failed="6" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Woodi_4644]]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-03-05T17:23:07 IST" name="Suite" finished-at="2025-03-05T17:23:30 IST" duration-ms="22932">
+  <suite started-at="2025-03-13T16:58:51 IST" name="Suite" finished-at="2025-03-13T17:01:25 IST" duration-ms="154321">
     <groups>
       <group name="regressionTest">
-        <method signature="CreateOrganizationTest.createOrganizationTest()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@7c7b252e]" name="createOrganizationTest" class="com.comcast.orgtest.CreateOrganizationTest"/>
+        <method signature="CreateContactTest.createContactWithOrganizationTest()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@4c583ecf]" name="createContactWithOrganizationTest" class="com.comcast.crm.contacttest.CreateContactTest"/>
+        <method signature="CreateContactTest.createContactWithSupportDateTest()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@4c583ecf]" name="createContactWithSupportDateTest" class="com.comcast.crm.contacttest.CreateContactTest"/>
+        <method signature="CreateOrganizationTest.createOrganizationTest()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@235834f2]" name="createOrganizationTest" class="com.comcast.orgtest.CreateOrganizationTest"/>
+        <method signature="CreateOrganizationTest.createOrganizationWithIndustriesTest()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@235834f2]" name="createOrganizationWithIndustriesTest" class="com.comcast.orgtest.CreateOrganizationTest"/>
+        <method signature="CreateOrganizationTest.createOrganizationWithPhoneNumberTest()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@235834f2]" name="createOrganizationWithPhoneNumberTest" class="com.comcast.orgtest.CreateOrganizationTest"/>
+        <method signature="CreateContactTest.createContactWithOrganizationTest()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@815b41f]" name="createContactWithOrganizationTest" class="com.comcast.crm.contacttest.CreateContactTest"/>
+        <method signature="CreateContactTest.createContactWithSupportDateTest()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@815b41f]" name="createContactWithSupportDateTest" class="com.comcast.crm.contacttest.CreateContactTest"/>
+        <method signature="CreateOrganizationTest.createOrganizationTest()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@5542c4ed]" name="createOrganizationTest" class="com.comcast.orgtest.CreateOrganizationTest"/>
+        <method signature="CreateOrganizationTest.createOrganizationWithIndustriesTest()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@5542c4ed]" name="createOrganizationWithIndustriesTest" class="com.comcast.orgtest.CreateOrganizationTest"/>
+        <method signature="CreateOrganizationTest.createOrganizationWithPhoneNumberTest()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@5542c4ed]" name="createOrganizationWithPhoneNumberTest" class="com.comcast.orgtest.CreateOrganizationTest"/>
       </group> <!-- regressionTest -->
       <group name="smokeTest">
-        <method signature="CreateOrganizationTest.createOrganizationTest()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@7c7b252e]" name="createOrganizationTest" class="com.comcast.orgtest.CreateOrganizationTest"/>
+        <method signature="CreateContactTest.createContactTest()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@4c583ecf]" name="createContactTest" class="com.comcast.crm.contacttest.CreateContactTest"/>
+        <method signature="CreateOrganizationTest.createOrganizationTest()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@235834f2]" name="createOrganizationTest" class="com.comcast.orgtest.CreateOrganizationTest"/>
+        <method signature="CreateOrganizationTest.createOrganizationWithIndustriesTest()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@235834f2]" name="createOrganizationWithIndustriesTest" class="com.comcast.orgtest.CreateOrganizationTest"/>
+        <method signature="CreateOrganizationTest.createOrganizationWithPhoneNumberTest()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@235834f2]" name="createOrganizationWithPhoneNumberTest" class="com.comcast.orgtest.CreateOrganizationTest"/>
+        <method signature="CreateContactTest.createContactTest()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@815b41f]" name="createContactTest" class="com.comcast.crm.contacttest.CreateContactTest"/>
+        <method signature="CreateOrganizationTest.createOrganizationTest()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@5542c4ed]" name="createOrganizationTest" class="com.comcast.orgtest.CreateOrganizationTest"/>
+        <method signature="CreateOrganizationTest.createOrganizationWithIndustriesTest()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@5542c4ed]" name="createOrganizationWithIndustriesTest" class="com.comcast.orgtest.CreateOrganizationTest"/>
+        <method signature="CreateOrganizationTest.createOrganizationWithPhoneNumberTest()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@5542c4ed]" name="createOrganizationWithPhoneNumberTest" class="com.comcast.orgtest.CreateOrganizationTest"/>
       </group> <!-- smokeTest -->
     </groups>
-    <test started-at="2025-03-05T17:23:07 IST" name="Test" finished-at="2025-03-05T17:23:30 IST" duration-ms="22932">
+    <test started-at="2025-03-13T16:58:51 IST" name="Test-Runner-Chrome" finished-at="2025-03-13T17:00:02 IST" duration-ms="71045">
       <class name="com.comcast.orgtest.CreateOrganizationTest">
-        <test-method is-config="true" signature="configBS()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@7c7b252e]" started-at="2025-03-05T17:23:02 IST" name="configBS" finished-at="2025-03-05T17:23:07 IST" duration-ms="4859" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBS -->
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@7c7b252e]" started-at="2025-03-05T17:23:07 IST" name="configBC" finished-at="2025-03-05T17:23:10 IST" duration-ms="3204" status="PASS">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@5542c4ed]" started-at="2025-03-13T16:59:27 IST" name="configBC" finished-at="2025-03-13T16:59:30 IST" duration-ms="2382" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@7c7b252e]" started-at="2025-03-05T17:23:10 IST" name="configBM" finished-at="2025-03-05T17:23:10 IST" duration-ms="200" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@5542c4ed]" started-at="2025-03-13T16:59:30 IST" name="configBM" finished-at="2025-03-13T16:59:34 IST" duration-ms="4332" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="createOrganizationTest()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@7c7b252e]" started-at="2025-03-05T17:23:10 IST" name="createOrganizationTest" finished-at="2025-03-05T17:23:28 IST" duration-ms="17107" status="PASS">
+        <test-method signature="createOrganizationTest()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@5542c4ed]" started-at="2025-03-13T16:59:34 IST" name="createOrganizationTest" finished-at="2025-03-13T16:59:34 IST" duration-ms="0" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String)" because "this.report" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String)" because "this.report" is null
+at com.comcast.crm.generic.listenerutility.ListenerImplementationClass.onTestStart(ListenerImplementationClass.java:55)
+at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:103)
+at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:569)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createOrganizationTest -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@7c7b252e]" started-at="2025-03-05T17:23:28 IST" name="configAM" finished-at="2025-03-05T17:23:30 IST" duration-ms="2067" status="PASS">
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@5542c4ed]" started-at="2025-03-13T16:59:35 IST" name="configAM" finished-at="2025-03-13T16:59:40 IST" duration-ms="5504" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@7c7b252e]" started-at="2025-03-05T17:23:30 IST" name="configAC" finished-at="2025-03-05T17:23:30 IST" duration-ms="326" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@5542c4ed]" started-at="2025-03-13T16:59:40 IST" name="configBM" finished-at="2025-03-13T16:59:40 IST" duration-ms="238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="createOrganizationWithIndustriesTest()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@5542c4ed]" started-at="2025-03-13T16:59:40 IST" name="createOrganizationWithIndustriesTest" finished-at="2025-03-13T16:59:40 IST" duration-ms="0" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String)" because "this.report" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String)" because "this.report" is null
+at com.comcast.crm.generic.listenerutility.ListenerImplementationClass.onTestStart(ListenerImplementationClass.java:55)
+at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:103)
+at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:569)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrganizationWithIndustriesTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@5542c4ed]" started-at="2025-03-13T16:59:45 IST" name="configAM" finished-at="2025-03-13T16:59:51 IST" duration-ms="6142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@5542c4ed]" started-at="2025-03-13T16:59:51 IST" name="configBM" finished-at="2025-03-13T16:59:55 IST" duration-ms="4530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="createOrganizationWithPhoneNumberTest()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@5542c4ed]" started-at="2025-03-13T16:59:55 IST" name="createOrganizationWithPhoneNumberTest" finished-at="2025-03-13T16:59:55 IST" duration-ms="0" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String)" because "this.report" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String)" because "this.report" is null
+at com.comcast.crm.generic.listenerutility.ListenerImplementationClass.onTestStart(ListenerImplementationClass.java:55)
+at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:103)
+at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:569)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrganizationWithPhoneNumberTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@5542c4ed]" started-at="2025-03-13T16:59:56 IST" name="configAM" finished-at="2025-03-13T17:00:02 IST" duration-ms="5747" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@5542c4ed]" started-at="2025-03-13T17:00:02 IST" name="configAC" finished-at="2025-03-13T17:00:02 IST" duration-ms="334" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-        <test-method is-config="true" signature="configAS()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@7c7b252e]" started-at="2025-03-05T17:23:30 IST" name="configAS" finished-at="2025-03-05T17:23:30 IST" duration-ms="7" status="PASS">
+      </class> <!-- com.comcast.orgtest.CreateOrganizationTest -->
+      <class name="com.comcast.crm.contacttest.CreateContactTest">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@815b41f]" started-at="2025-03-13T16:58:51 IST" name="configBS" finished-at="2025-03-13T16:58:51 IST" duration-ms="321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBS -->
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@815b41f]" started-at="2025-03-13T16:58:51 IST" name="configBC" finished-at="2025-03-13T16:58:55 IST" duration-ms="3964" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@815b41f]" started-at="2025-03-13T16:58:55 IST" name="configBM" finished-at="2025-03-13T16:58:59 IST" duration-ms="4601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="createContactTest()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@815b41f]" started-at="2025-03-13T16:59:00 IST" name="createContactTest" finished-at="2025-03-13T16:59:00 IST" duration-ms="2" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String)" because "this.report" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String)" because "this.report" is null
+at com.comcast.crm.generic.listenerutility.ListenerImplementationClass.onTestStart(ListenerImplementationClass.java:55)
+at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:103)
+at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:569)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@815b41f]" started-at="2025-03-13T16:59:00 IST" name="configAM" finished-at="2025-03-13T16:59:06 IST" duration-ms="5984" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@815b41f]" started-at="2025-03-13T16:59:06 IST" name="configBM" finished-at="2025-03-13T16:59:10 IST" duration-ms="4383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="createContactWithOrganizationTest()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@815b41f]" started-at="2025-03-13T16:59:10 IST" name="createContactWithOrganizationTest" finished-at="2025-03-13T16:59:10 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String)" because "this.report" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String)" because "this.report" is null
+at com.comcast.crm.generic.listenerutility.ListenerImplementationClass.onTestStart(ListenerImplementationClass.java:55)
+at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:103)
+at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:569)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactWithOrganizationTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@815b41f]" started-at="2025-03-13T16:59:11 IST" name="configAM" finished-at="2025-03-13T16:59:16 IST" duration-ms="5004" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@815b41f]" started-at="2025-03-13T16:59:16 IST" name="configBM" finished-at="2025-03-13T16:59:21 IST" duration-ms="4088" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="createContactWithSupportDateTest()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@815b41f]" started-at="2025-03-13T16:59:21 IST" name="createContactWithSupportDateTest" finished-at="2025-03-13T16:59:21 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String)" because "this.report" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String)" because "this.report" is null
+at com.comcast.crm.generic.listenerutility.ListenerImplementationClass.onTestStart(ListenerImplementationClass.java:55)
+at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:103)
+at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:569)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactWithSupportDateTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@815b41f]" started-at="2025-03-13T16:59:21 IST" name="configAM" finished-at="2025-03-13T16:59:27 IST" duration-ms="6206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@815b41f]" started-at="2025-03-13T16:59:27 IST" name="configAC" finished-at="2025-03-13T16:59:27 IST" duration-ms="315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+        <test-method is-config="true" signature="configAS()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@815b41f]" started-at="2025-03-13T17:01:25 IST" name="configAS" finished-at="2025-03-13T17:01:25 IST" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAS -->
+      </class> <!-- com.comcast.crm.contacttest.CreateContactTest -->
+    </test> <!-- Test-Runner-Chrome -->
+    <test started-at="2025-03-13T16:58:51 IST" name="Test-Runner-Edge" finished-at="2025-03-13T17:01:25 IST" duration-ms="154321">
+      <class name="com.comcast.orgtest.CreateOrganizationTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@235834f2]" started-at="2025-03-13T17:00:22 IST" name="configBC" finished-at="2025-03-13T17:00:25 IST" duration-ms="2313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@235834f2]" started-at="2025-03-13T17:00:25 IST" name="configBM" finished-at="2025-03-13T17:00:28 IST" duration-ms="3588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="createOrganizationTest()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@235834f2]" started-at="2025-03-13T17:00:28 IST" name="createOrganizationTest" finished-at="2025-03-13T17:00:42 IST" duration-ms="14137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrganizationTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@235834f2]" started-at="2025-03-13T17:00:42 IST" name="configAM" finished-at="2025-03-13T17:00:44 IST" duration-ms="1920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@235834f2]" started-at="2025-03-13T17:00:44 IST" name="configBM" finished-at="2025-03-13T17:00:48 IST" duration-ms="3375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="createOrganizationWithIndustriesTest()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@235834f2]" started-at="2025-03-13T17:00:48 IST" name="createOrganizationWithIndustriesTest" finished-at="2025-03-13T17:01:02 IST" duration-ms="14607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrganizationWithIndustriesTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@235834f2]" started-at="2025-03-13T17:01:02 IST" name="configAM" finished-at="2025-03-13T17:01:05 IST" duration-ms="2181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@235834f2]" started-at="2025-03-13T17:01:05 IST" name="configBM" finished-at="2025-03-13T17:01:08 IST" duration-ms="3747" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="createOrganizationWithPhoneNumberTest()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@235834f2]" started-at="2025-03-13T17:01:08 IST" name="createOrganizationWithPhoneNumberTest" finished-at="2025-03-13T17:01:23 IST" duration-ms="14498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrganizationWithPhoneNumberTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@235834f2]" started-at="2025-03-13T17:01:23 IST" name="configAM" finished-at="2025-03-13T17:01:25 IST" duration-ms="2150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.comcast.orgtest.CreateOrganizationTest@235834f2]" started-at="2025-03-13T17:01:25 IST" name="configAC" finished-at="2025-03-13T17:01:25 IST" duration-ms="314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
       </class> <!-- com.comcast.orgtest.CreateOrganizationTest -->
-    </test> <!-- Test -->
+      <class name="com.comcast.crm.contacttest.CreateContactTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@4c583ecf]" started-at="2025-03-13T16:58:51 IST" name="configBC" finished-at="2025-03-13T16:58:55 IST" duration-ms="3939" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@4c583ecf]" started-at="2025-03-13T16:58:55 IST" name="configBM" finished-at="2025-03-13T16:59:00 IST" duration-ms="4886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="createContactTest()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@4c583ecf]" started-at="2025-03-13T16:59:00 IST" name="createContactTest" finished-at="2025-03-13T16:59:17 IST" duration-ms="16983" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Woodi_4644]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createContactTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@4c583ecf]" started-at="2025-03-13T16:59:17 IST" name="configAM" finished-at="2025-03-13T16:59:19 IST" duration-ms="2223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@4c583ecf]" started-at="2025-03-13T16:59:19 IST" name="configBM" finished-at="2025-03-13T16:59:23 IST" duration-ms="4239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="createContactWithOrganizationTest()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@4c583ecf]" started-at="2025-03-13T16:59:23 IST" name="createContactWithOrganizationTest" finished-at="2025-03-13T16:59:57 IST" duration-ms="33768" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactWithOrganizationTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@4c583ecf]" started-at="2025-03-13T16:59:57 IST" name="configAM" finished-at="2025-03-13T16:59:59 IST" duration-ms="2214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@4c583ecf]" started-at="2025-03-13T16:59:59 IST" name="configBM" finished-at="2025-03-13T17:00:03 IST" duration-ms="3814" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="createContactWithSupportDateTest()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@4c583ecf]" started-at="2025-03-13T17:00:03 IST" name="createContactWithSupportDateTest" finished-at="2025-03-13T17:00:20 IST" duration-ms="16956" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactWithSupportDateTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@4c583ecf]" started-at="2025-03-13T17:00:20 IST" name="configAM" finished-at="2025-03-13T17:00:22 IST" duration-ms="2108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.comcast.crm.contacttest.CreateContactTest@4c583ecf]" started-at="2025-03-13T17:00:22 IST" name="configAC" finished-at="2025-03-13T17:00:22 IST" duration-ms="314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.comcast.crm.contacttest.CreateContactTest -->
+    </test> <!-- Test-Runner-Edge -->
   </suite> <!-- Suite -->
 </testng-results>

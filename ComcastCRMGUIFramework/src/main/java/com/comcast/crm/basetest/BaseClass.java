@@ -40,12 +40,12 @@ public class BaseClass {
 		dbLib.getDbconnection();
 	}
 	
-	//@Parameters("BROWSER")
+	/*@Parameters("BROWSER")*/
 	@BeforeClass(groups = {"smokeTest","regressionTest"})
 	public void configBC() throws Throwable {
 		System.out.println("-----Launch the browser-----");
 		String BROWSER	= fLib.getDataFromPropertiesFile("browser");
-		//String BROWSER = browser;
+		//String BROWSER = System.getProperty("browser");
 		if (BROWSER.equals("chrome")) {
 			driver=new ChromeDriver();		
 		}else if(BROWSER.equals("firefox")) {
@@ -55,7 +55,7 @@ public class BaseClass {
 		}else {
 			driver=new ChromeDriver(); 
 		}
-		//sdriver = driver;
+		sdriver = driver;
 		UtilityClassObject.setDriver(driver);
 		
 		wLib.waitForPageToLoad(driver);
@@ -69,7 +69,10 @@ public class BaseClass {
 		System.out.println("-----Login to application-----");
 		String URL	= fLib.getDataFromPropertiesFile("url");
 		String USERNAME = fLib.getDataFromPropertiesFile("username");
-		String PASSWORD = fLib.getDataFromPropertiesFile("password");		
+		String PASSWORD = fLib.getDataFromPropertiesFile("password");
+		//String URL = System.getProperty("url");
+		//String USERNAME = System.getProperty("username");
+		//String PASSWORD = System.getProperty("password");
 		LoginPage lp = new LoginPage(driver);
 		lp.loginToApp(USERNAME, PASSWORD);
 	}

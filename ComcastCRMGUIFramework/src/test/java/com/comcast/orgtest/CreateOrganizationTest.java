@@ -22,6 +22,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
@@ -45,7 +46,7 @@ import com.comcast.crm.objectrepositoryutility.OrganizationsPage;
  * 
  * 
  */
-
+@Listeners(com.comcast.crm.generic.listenerutility.ListenerImplementationClass.class)
 public class CreateOrganizationTest extends BaseClass {
 	
 	@Test(groups = {"smokeTest","regressionTest"})
@@ -64,8 +65,8 @@ public class CreateOrganizationTest extends BaseClass {
 //		String PASSWORD = fLib.getDataFromPropertiesFile("password");
 		
 		
-		/*ListenerImplementationClass.test.log(Status.INFO, "Read data from Excel");*/
-		UtilityClassObject.getTest().log(Status.INFO, "Read data from Excel");
+		ListenerImplementationClass.test.log(Status.INFO, "Read data from Excel");
+		//UtilityClassObject.getTest().log(Status.INFO, "Read data from Excel");
 		/*Read test script data from Excel file*/
 		String orgName=eLib.getDataFromExcel("org",1,2)+jLib.getRandomNumber();
 			
@@ -154,27 +155,27 @@ public class CreateOrganizationTest extends BaseClass {
 		
 		//Using Configuration Annotation Technique		
 		/*Step 2: Navigate to Organizations Module*/
-		/*ListenerImplementationClass.test.log(Status.INFO, "Navigate to Organization Page");*/
-		UtilityClassObject.getTest().log(Status.INFO, "Navigate to Organization Page");
+		ListenerImplementationClass.test.log(Status.INFO, "Navigate to Organization Page");
+		//UtilityClassObject.getTest().log(Status.INFO, "Navigate to Organization Page");
 		HomePage hp = new HomePage(driver);
 		hp.getOrgLink().click();
 
 		/*Step 3: Click on "Create Organization" Button*/
-		/*ListenerImplementationClass.test.log(Status.INFO, "Click on Create Organization Page");*/
-		UtilityClassObject.getTest().log(Status.INFO, "Click on Create Organization Page");
+		ListenerImplementationClass.test.log(Status.INFO, "Click on Create Organization Page");
+		//UtilityClassObject.getTest().log(Status.INFO, "Click on Create Organization Page");
 		OrganizationsPage cnp = new OrganizationsPage(driver);
 		cnp.getCreateNewOrgBtn().click();
 		
 		/*Step 4: Enter all the details and create new OrganizationInfoPage*/
-		/*ListenerImplementationClass.test.log(Status.INFO, "Create a new Organization");*/
-		UtilityClassObject.getTest().log(Status.INFO, "Create a new Organization");
+		ListenerImplementationClass.test.log(Status.INFO, "Create a new Organization");
+		//UtilityClassObject.getTest().log(Status.INFO, "Create a new Organization");
 		CreatingNewOrganizationPage cnop = new CreatingNewOrganizationPage(driver);
 		cnop.createOrg(orgName);
-		/*ListenerImplementationClass.test.log(Status.INFO, orgName+"---->Create a new Organization"); //Display the organization name which is getiing created during the run-time*/
+		ListenerImplementationClass.test.log(Status.INFO, orgName+"---->Create a new Organization"); //Display the organization name which is getiing created during the run-time
 		
 		/*Step 5: Verify Header Message Expected Result*/
-		/*ListenerImplementationClass.test.log(Status.INFO, "Verify Header Message Expected Result");*/
-		UtilityClassObject.getTest().log(Status.INFO, orgName+" Header Message Expected is PASS");
+		ListenerImplementationClass.test.log(Status.INFO, "Verify Header Message Expected Result");
+		//UtilityClassObject.getTest().log(Status.INFO, orgName+" Header Message Expected is PASS");
 		OrganizationInfoPage oip = new OrganizationInfoPage(driver);
 		String actOrgName = oip.getHeaderMsg().getText();
 		Assert.assertEquals(true, actOrgName.contains(orgName));
